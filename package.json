@@ -2,6 +2,7 @@
     "name": "scandipwa-demo",
     "version": "0.0.1",
     "license": "OSL-3.0",
+    "homepage": "/tech_storeview/",
     "dependencies": {
         "@scandipwa/scandipwa": "6.4.0",
         "@scandipwa/scandipwa-scripts": "2.5.0",
@@ -47,5 +48,5 @@
             "last 1 safari version"
         ]
     },
-    "proxy": "https://40kskudemo.scandipwa.com/"
+    "proxy": "https://tech-demo.scandipwa.com/"
 }
