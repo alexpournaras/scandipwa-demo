@@ -1,0 +1,84 @@
+.CookiePopup {
+    --cookie-popup-bottom-margin: 10px;
+
+    position: fixed;
+    min-width: 210px;
+    inset-block-end: var(--cookie-popup-bottom-margin);
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 420px;
+    width: calc(100% - 32px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    opacity: 0.95;
+    box-sizing: border-box;
+
+    @include mobile {
+        margin-inline: 2px;
+        inset-block-end: calc(var(--footer-total-height) + var(--cookie-popup-bottom-margin));
+    }
+
+    &-Header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    &-Text {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    &-Actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &-PolicyButton,
+    &-AcceptButton {
+        flex: 1 1 150px;
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid transparent;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    &-PolicyButton {
+        background-color: #f0f0f0;
+        color: #333;
+
+        &:hover {
+            background-color: #e4e4e4;
+            color: black;
+        }
+    }
+
+    &-AcceptButton {
+        background-color: var(--primary-base-color);
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f0f0f0;
+            border: 1px solid var(--primary-base-color);
+            color: var(--primary-base-color);
+        }
+    }
+}
