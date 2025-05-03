@@ -4,8 +4,8 @@
         "scss"
     ],
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.fixAll.stylelint": "explicit"
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
     },
     "stylelint.enable": true,
     "css.validate": false,

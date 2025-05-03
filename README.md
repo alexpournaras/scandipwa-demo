@@ -2,6 +2,21 @@
 
 This package contains new ScandiPWA theme sources. Your parent theme is `@scandipwa/scandipwa`.
 
+## Tasks
+
+1. **Project Setup**  
+Followed the official [ScandiPWA Quick Start Guide](https://docs.scandipwa.com/quick-start-guide) to set up a working ScandiPWA demo environment. The setup was configured using one of the provided demo sites as the data source.
+
+2. **Cookie Component Enhancement**  
+Redesigned the cookie consent component to make it more visually prominent and engaging. The new design encourages user interaction and compliance, ensuring the component feels more like a required action rather than a passive message.
+
+3. **Mobile Burger Menu**  
+Implemented a new burger menu button specifically for mobile devices. Positioned next to the logo in the header, the button triggers the menu overlay without redirecting the user to the `/menu` route, enhancing the mobile navigation experience.
+
+Below, you can see screenshots from a mobile device showcasing the updated cookie component and the newly added burger menu in the header.
+
+![Screenshots](./screenshots.png)
+
 ## Installation
 
 Before you start, make sure to install package dependencies.
